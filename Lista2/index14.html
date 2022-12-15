@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2 Lista 2</title>
+</head>
+<body>
+   <script>
+    
+    //Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores. 
+    var eleitores = parseFloat(prompt("Qual o total de eleitores no município: "));
+      var brancos = parseFloat(prompt("Qual o total de votos brancos: "));
+      var nulos = parseFloat(prompt("Qual o total de votos nulos: "));
+      var validos = parseFloat(prompt("Qual o total de votos válidos: "));
+      
+      percbrancos = brancos/eleitores*100
+      percnulos = nulos/eleitores*100
+      percvalidos = validos/eleitores*100
+
+      alert("O percentual de votos brancos é: "+percbrancos);
+      alert("O percentual de votos nulos é: "+percnulos);
+      alert("O percentual de votos válidos é: "+percvalidos);
+
+   </script> 
+</body>
+</html>
