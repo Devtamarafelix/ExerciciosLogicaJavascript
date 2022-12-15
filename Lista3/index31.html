@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="p-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10 lista 3</title>
+</head>
+
+<body>
+    <script>
+        /*Em uma eleição sindical concorreram ao cargo de presidente três candidatos (A, B e C). Durante a apuração dos
+        votos foram computados votos nulos e votos em branco, além dos votos válidos para cada candidato. Deve ser
+        criado um programa de computador que efetue a leitura da quantidade de votos válidos para cada candidato, além
+        de efetuar também a leitura da quantidade de votos nulos e votos em branco. Ao final o programa deve apresentar
+        o número total de eleitores, considerando votos válidos, nulos e em branco; o percentual correspondente de votos
+        válidos em relação à quantidade de eleitores; o percentual correspondente de votos válidos do candidato A em
+        relação à quantidade de eleitores; o percentual correspondente de votos válidos do candidato B em relação à
+        quantidade de eleitores; o percentual correspondente de votos válidos do candidato C em relação à quantidade de
+        eleitores; o percentual correspondente de votos nulos em relação à quantidade de eleitores; e por último o
+        percentual correspondente de votos em branco em relação à quantidade de eleitores.*/
+
+
+        let candA = parseInt(prompt("Quantidade de votos válidos para o candidato A: "));
+        let candB = parseInt(prompt("Quantidade de votos válidos para o candidato B: "));
+        let candC = parseInt(prompt("Quantidade de votos válidos para o candidato C: "));
+        let nulos = parseInt(prompt("Quantidade de votos nulos: "));
+        let brancos = parseInt(prompt("Quantidade de votos brancos: "));
+
+        votoValido = candA + candB + candC
+
+        totalEleitor = votoValido + nulos + brancos
+
+        percValido = (votoValido) * 100 / totalEleitor
+        percValCandA = (candA * 100) / totalEleitor
+        percValCandB = (candB * 100) / totalEleitor
+        percValCandC = (candC * 100) / totalEleitor
+
+        percNulos = (nulos * 100) / totalEleitor
+        percBrancos = (brancos * 100) / totalEleitor
+
+        alert("A Quantidade de eleitores corresponde a: " + totalEleitor);
+        alert("A Quantidade de votos brancos corresponde a: " + percBrancos);
+        alert("A Quantidade de votos nulos corresponde a: " + percNulos);
+        alert("A Quantidade de votos válidos do candidato A em relação aos eleitores corresponde a: " + percValCandA);
+        alert("A Quantidade de votos válidos do candidato B relação aos eleitores corresponde a: " + percValCandB);
+        alert("A Quantidade de votos válidos do candidato C relação aos eleitores corresponde a: " + percValCandC);
+    </script>
+</body>
+
+</html>
